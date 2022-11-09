@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]");e.addEventListener("click",(function(){var a="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!a),t.classList.toggle("is-open")}))}(),jQuery(document).ready((function(e){"use strict";e("#testimonials-list").owlCarousel({loop:!0,center:!0,items:3,margin:0,autoplay:!0,dots:!0,autoplayTimeout:8500,smartSpeed:450,responsive:{0:{items:1},768:{items:2},1200:{items:3}}})}));
+//# sourceMappingURL=index.03a10e72.js.map
