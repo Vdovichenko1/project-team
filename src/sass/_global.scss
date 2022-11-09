@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.14;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  width: 15px;
+}
+body::-webkit-scrollbar-track{
+  background: linear-gradient(180deg,#faf0cd,#fab397);
+}
+body::-webkit-scrollbar-thumb{
+  background: url(../images/scrollbar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: $normalpink;
+  border: 1px solid $lightpink;
+  border-radius: 20px;
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  @media screen and (min-width: 320px) {
+    width: 320px !important;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px !important;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px !important;
+  }
+  }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

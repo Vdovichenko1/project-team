@@ -1,0 +1,301 @@
+.contacts {
+    min-width: 320px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    
+
+    @media screen and (min-width: 768px) {
+        min-width: 768px;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 1200px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+.contacts-gradient {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    height: 1144px;
+    width: 100%;
+    background: $lightpink;
+
+    @media screen and (min-width: 768px) {
+        height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 400px;
+    }
+}
+.section-contacts {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.contacts-gallery {
+    text-align: start;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+} 
+.contacts-gallery__item {
+    padding: 25px 32px;
+    width: 280px;
+    // height: 410px;
+    margin: auto;
+    background-color: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px 40px;
+        width: 224px;
+        // height: 530px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 40px 40px;
+        width: 368px;
+    }
+}
+.contacts-gallery__item:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 32px;
+    }
+}
+.contacts-gallery__category {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $border;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 32px;
+    }
+}
+.contacts-gallery__category--head {
+    height: 16px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $white;
+    background: $peach;
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+        height: 28px;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+}
+.current-foodtruck {
+    background: $green;
+}
+.contacts-gallery__category--paragraph {
+    margin-bottom: 8px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $dark;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+} 
+.contacts-gallery__category--text {
+    margin: 0;
+    width: 200px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $gray;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 166%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 243px;
+        font-size: 16px;
+        line-height: 183%;
+    }
+}
+.contacts-gallery__working {
+    padding: 24px 0;
+    border-bottom: 1px solid $border;
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+    }
+}
+.contacts-gallery__working--week {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: $dark;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+.contacts-gallery__working--time {
+    width: 180px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: $pink;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+.contacts-gallery__working--time:last-child {
+    margin: 0;
+}
+
+.contacts-gallery__address {
+    padding-top: 24px;
+    line-height: 18px;
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 30px;
+        font-size: 14px;
+        line-height: 183%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 183%;
+    }
+}
+.contacts-gallery__address--tel,
+.contacts-gallery__address--mail {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    
+    color: $gray;    
+
+    &:hover,
+    &:focus {
+        color: $red;
+    }
+}
+.contacts-gallery__button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 32px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+.contacts-gallery__icon--white {
+    margin-left: 5px;
+    fill: $white;
+}
+.contacts-gallery__icon--red {
+    margin-left: 5px;
+    fill: $red;
+}
+.contacts-gallery__button--Locations {
+    width: 161px;
+    height: 44px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $white;
+
+    background: $red;
+    border-radius: 22px;
+
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+        color: $red;
+        background: $pink;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 191px;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+}
+.contacts-gallery__button--Franchise {
+    width: 161px;
+    height: 44px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $red;
+
+    background: $white;
+    border-radius: 22px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        background: $pink;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+}

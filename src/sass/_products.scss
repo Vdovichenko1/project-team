@@ -1,0 +1,444 @@
+.products__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products__name {
+  font-size: 20px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+@media screen and (min-width: 1200px) {
+  .products__name {
+    width: 368px;
+    height: 34px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    line-height: 1.13;
+
+  }
+}
+
+.products__name::after {
+  content: "...";
+  font-size: 26px;
+  color: $white;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 6px;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+// Conteiner
+
+@media screen and (min-width: 768px) {
+  .products__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+   
+  }
+}
+
+// Icon
+
+
+.products__icon {
+  margin-left: 120px;
+  fill: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .products__icon {
+    margin-left: 92px;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__icon {
+    margin-left: 164px;
+    margin-bottom: 35px;
+
+  }
+}
+
+// Subtitle
+
+.products__subtitle {
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  color: $pink;
+  margin-bottom: 15px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+@media screen and (min-width: 768px) {
+  .products__subtitle {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $pink;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}
+
+// Heading
+
+.products__heading {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $red;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 768px) {
+  .products__heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__heading {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
+}
+
+// BOX SECTION -- PINK
+
+.products__box--pink {
+  padding-top: 160px;
+  position: relative;
+  width: 280px;
+  height: 489px;
+  margin-top: 148px;
+  background-color: $pink;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.products__box--pink::after {
+  content: "";
+  position: absolute;
+  top: -140;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background: url("../images/cream.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .products__box--pink {
+    padding-top: 100px;
+    position: relative;
+    width: 224px;
+    height: 473px;
+    margin-top: 148px;
+    background-color: $pink;
+    border-radius: 24px;
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
+
+ @media screen and (min-width: 768px) {
+  .products__box--pink::after {
+    content: "";
+    position: absolute;
+    top: -150;
+    left: 0;
+    width: 224px;
+    height: 224px;
+    background: url("../images/cream.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__box--pink {
+    padding-top: 165px;
+    position: relative;
+    width: 368px;
+    height: 535px;
+    margin-top: 280px;
+    background-color: $pink;
+    border-radius: 24px;
+    margin-left: 0;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__box--pink::after {
+    content: "";
+    position: absolute;
+    top: -250;
+    left: 0;
+    width: 368px;
+    height: 394px;
+    background: url("../images/cream.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// BOX SECTION --PEACH
+
+.products__box--peach {
+  padding-top: 160px;
+  margin-top: 140px;
+  position: relative;
+  width: 280px;
+  height: 489px;
+  background-color: $peach;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.products__box--peach::after {
+  content: "";
+  position: absolute;
+  top: -140;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background: url("../images/coffee.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .products__box--peach {
+    padding-top: 100px;
+    position: relative;
+    width: 224px;
+    height: 473px;
+    margin-top: 148px;
+    background-color: $peach;
+    border-radius: 24px;
+    margin-left: 0px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products__box--peach::after {
+    content: "";
+    position: absolute;
+    top: -150;
+    left: 0;
+    width: 224px;
+    height: 224px;
+    background: url("../images/coffee.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__box--peach {
+    padding-top: 165px;
+    position: relative;
+    width: 368px;
+    height: 535px;
+    margin-top: 280px;
+    background-color: $peach;
+    border-radius: 24px;
+    margin-left: 0;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__box--peach::after {
+    content: "";
+    position: absolute;
+    top: -250;
+    left: 0;
+    width: 368px;
+    height: 394px;
+    background: url("../images/coffee.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// BOX SECTION --GREEN
+
+
+.products__box--green {
+  padding-top: 160px;
+  margin-top: 140px;
+  position: relative;
+  width: 280px;
+  height: 489px;
+  background-color: $green;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.products__box--green::after {
+  content: "";
+  position: absolute;
+  top: -140;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background: url("../images/milkshakes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .products__box--green {
+    padding-top: 100px;
+    position: relative;
+    width: 224px;
+    height: 473px;
+    margin-top: 148px;
+    background-color: $green;
+    margin-left: 0px;
+    border-radius: 24px;
+  }
+}
+
+ @media screen and (min-width: 768px) {
+  .products__box--green::after {
+    content: "";
+    position: absolute;
+    top: -150;
+    left: 0;
+    width: 224px;
+    height: 224px;
+    background: url("../images/milkshakes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__box--green {
+    padding-top: 165px;
+    position: relative;
+    width: 368px;
+    height: 535px;
+    margin-top: 280px;
+    background-color: $green;
+    border-radius: 24px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__box--green::after {
+    content: "";
+    position: absolute;
+    top: -250;
+    left: 0;
+    width: 368px;
+    height: 394px;
+    background: url("../images/milkshakes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// SECTION TEXT
+
+.products__text {
+ margin: 32px 39px 32px 41px;
+ 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  color: $white;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@media screen and (min-width: 768px) {
+  .products__text {
+    margin: 32px;
+    line-height: 176%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__text {
+    margin-top: 32px;
+    margin-bottom: 60px;
+    margin-left: 64px;
+    margin-right: 63px;
+    font-size: 16px;
+  }
+}
